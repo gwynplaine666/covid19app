@@ -2,7 +2,6 @@ import { ListItemButton, TextField } from '@mui/material'
 import Modal from '@mui/material/Modal'
 import { useEffect, useState } from 'react'
 import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 
 export default function OwnIlness({ open, onClose }) {
@@ -47,14 +46,21 @@ export default function OwnIlness({ open, onClose }) {
   }
 
   return (
-    <Modal open={open} onClose={onClose} disablePortal>
+    <Modal
+      open={open}
+      onClose={() => {
+        onClose()
+        setText('')
+      }}
+      disablePortal
+    >
       <div className="modal-content">
         <div className="modal-form">
           <TextField
             value={text}
             onChange={(event) => setText(event.target.value)}
             fullWidth
-            placeholder="Add information about your illness"
+            placeholder="Add information about your illness (press enter to add)"
             onKeyDown={(event) => {
               if (event.code === 'Enter') {
                 onCreateIllness()
