@@ -6,7 +6,8 @@
     background-color: rgb(114, 73, 236);
     padding: 10px;
     border-radius: 10px;
-    color: white
+    color: white;
+    font-size: 20px;
 }
 
 .cards {
@@ -22,3 +23,32 @@
     margin-right: 10px;
     text-align: center;
 }
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#charts-cases {
+    background-color: rgb(229, 232, 236);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#charts-deaths {
+    margin-top: 20px;
+    background-color: rgb(229, 232, 236);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#add-own {
+    margin-left: 20px;
+    background-color: rgb(235, 147, 75);
+    font-weight: 600;
+}
+
+
+
