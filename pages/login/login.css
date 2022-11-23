@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 100vw;
     margin: 0 50px;
 }
 
@@ -43,6 +42,7 @@
     margin: 0;
     color: gray;
     font-size: 14px;
+    text-align: center;
 }
 
 .dont-have-account span {
