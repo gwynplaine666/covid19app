@@ -1,0 +1,52 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+    margin: 0 50px;
+}
+
+.form {
+    width: 50%;
+}
+
+
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.container input {
+    width: 100%;
+}
+
+.container .wellcome-back {
+     text-align: center;
+    margin: 5px 0 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+#sign-in {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.dont-have-account {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.dont-have-account span {
+    cursor: pointer;
+    color: rgb(62, 102, 235);
+    font-weight: 600;
+}
